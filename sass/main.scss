@@ -1,0 +1,60 @@
+@import 'colors';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #444;
+}
+
+nav {
+    text-transform: uppercase;
+    z-index: 20;
+    
+    .nav-link, a{
+        color: white;
+    }
+
+     .nav-link:hover {
+        color: $main-color ;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+    i {
+        padding: 10px;
+    }
+}
+
+header {
+    color: $white;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    .hero-img {
+        position: relative;
+        height: 100vh;
+        background-image: url(/img/men-827301_1920.jpg);
+        background-position: center;
+       background-size: cover;
+       background-attachment: fixed;
+    }
+
+    .hero-text {
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
